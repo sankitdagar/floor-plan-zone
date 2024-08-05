@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
+import Map from './components/Map';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex items-center justify-center h-screen">
+      <div className="relative w-4/5 h-4/5">
+        <Map />
+      </div>
     </div>
   );
 }
