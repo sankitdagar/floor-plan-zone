@@ -30,7 +30,7 @@ const Map = () => {
 
   return (
     <div className="relative w-full h-full">
-      <img src="/images/secondImage.jpg" alt="Map" className="w-full h-full object-cover" />
+      <img src="/images/firstImage.jpg" alt="Map" className="w-full h-full object-cover" />
       {positions.map(employee => (
         <EmployeeMarker key={employee._id} employee={employee} zoneData={ZonesData} />
       ))}
