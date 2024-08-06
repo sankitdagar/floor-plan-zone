@@ -14,6 +14,9 @@ const EmployeeMarker = ({ employee, zoneData }) => {
       }}
       title={`${firstName} ${lastName}\nZone: ${zone}`}
     >
+      <div className="bg-gray-500 text-white px-1 rounded-lg shadow-lg mb-2">
+        {zoneInfo.label}
+      </div>
       <div
         className="bg-white rounded-full h-6 w-6 flex items-center justify-center"
         style={{ borderColor: zoneInfo.color, borderWidth: 2 }}
